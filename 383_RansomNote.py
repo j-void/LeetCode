@@ -11,7 +11,7 @@ class Solution:
                 del rmap[c]
 
         return True
-        
+    
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
         for letter in set(ransomNote):
             if ransomNote.count(letter) > magazine.count(letter):
